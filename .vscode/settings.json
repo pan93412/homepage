@@ -1,0 +1,8 @@
+{
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.rootFontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "typescript.tsdk": "node_modules/.pnpm/typescript@4.9.3/node_modules/typescript/lib"
+}

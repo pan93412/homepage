@@ -1,0 +1,3 @@
+[submodule "vendor/harmonyos-font"]
+	path = vendor/harmonyos-font
+	url = https://github.com/CISC-Development/harmonyos-sans-subset.git
