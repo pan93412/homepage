@@ -11,7 +11,7 @@ export interface BadgeProps {
 }
 
 /**
- * The badge of a user.
+ * The badge component.
  */
 export function Badge({ children }: BadgeProps) {
   return (

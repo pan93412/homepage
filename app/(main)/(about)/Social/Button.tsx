@@ -10,9 +10,9 @@ export interface SocialButtonProps {
    */
   name: string;
   /**
-   * The icon of the button.
+   * The content of the button.
    */
-  icon: ReactNode;
+  children: ReactNode;
   /**
    * The link of this button.
    */
@@ -22,15 +22,15 @@ export interface SocialButtonProps {
 /**
  * The button that can redirect users to the corresponding social platform.
  */
-export function SocialButton({ name, icon, href }: SocialButtonProps) {
+export function SocialButton({ name, children, href }: SocialButtonProps) {
   return (
     <Link href={href} rel="nofollow">
       <button
         type="button"
-        className="block rounded p-4 transition hover:bg-neutral-800"
+        className="SocialButton block w-max rounded p-4 transition hover:bg-neutral-800"
         aria-label={`Pan's social platform on ${name}`}
       >
-        {icon}
+        {children}
       </button>
     </Link>
   );

@@ -1,5 +1,4 @@
 import {
-  BsGithub,
   BsTwitter,
   BsFacebook,
   BsTelegram,
@@ -8,6 +7,7 @@ import {
 } from "react-icons/bs";
 import { FaKeybase } from "react-icons/fa";
 import { SocialButton } from "./Button";
+import { GitHubSocialButton } from "./Specials";
 
 /**
  * 社群連結
@@ -16,41 +16,25 @@ export function SocialLinks() {
   return (
     <section className="SocialLinks">
       <div className="flex flex-wrap">
-        <SocialButton
-          name="GitHub"
-          icon={<BsGithub />}
-          href="https://pan93.com"
-        />
-        <SocialButton
-          name="Twitter"
-          icon={<BsTwitter />}
-          href="https://twitter.com/byStarTW"
-        />
-        <SocialButton
-          name="Telegram"
-          icon={<BsTelegram />}
-          href="https://t.me/bystartw_chatboard"
-        />
-        <SocialButton
-          name="Discord"
-          icon={<BsDiscord />}
-          href="https://discord.gg/TVUjgNA4WD"
-        />
-        <SocialButton
-          name="Facebook"
-          icon={<BsFacebook />}
-          href="https://facebook.com/pan93412TW"
-        />
-        <SocialButton
-          name="Keybase"
-          icon={<FaKeybase />}
-          href="https://keybase.io/pan93412"
-        />
-        <SocialButton
-          name="E-Mail"
-          icon={<BsMailbox />}
-          href="mailto:me@pan93.com"
-        />
+        <GitHubSocialButton />
+        <SocialButton name="Twitter" href="https://twitter.com/byStarTW">
+          <BsTwitter />
+        </SocialButton>
+        <SocialButton name="Telegram" href="https://t.me/bystartw_chatboard">
+          <BsTelegram />
+        </SocialButton>
+        <SocialButton name="Discord" href="https://discord.gg/TVUjgNA4WD">
+          <BsDiscord />
+        </SocialButton>
+        <SocialButton name="Facebook" href="https://facebook.com/pan93412TW">
+          <BsFacebook />
+        </SocialButton>
+        <SocialButton name="Keybase" href="https://keybase.io/pan93412">
+          <FaKeybase />
+        </SocialButton>
+        <SocialButton name="E-Mail" href="mailto:me@pan93.com">
+          <BsMailbox />
+        </SocialButton>
       </div>
     </section>
   );
