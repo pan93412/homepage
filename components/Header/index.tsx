@@ -1,13 +1,12 @@
 import classNames from "classnames";
 import Link from "next/link";
-import { useCallback, useMemo } from "react";
-import { featuredName } from "./featuredHeader";
+import { useCallback } from "react";
 import "./header.css";
 
 /**
  * The available entries in the header
  */
-export type HeaderEntry = "About" | "Projects" | "Speeches" | "Contributions";
+export type HeaderEntry = "About" | "Portfolio" | "Speeches" | "Contributions";
 
 /**
  * The configuration of Header.
@@ -23,7 +22,6 @@ export interface HeaderProps {
  * Header component
  */
 export function Header({ active }: HeaderProps) {
-  const name = useMemo(() => featuredName("Pan93412"), []);
   const activeClass = useCallback(
     (entry: HeaderEntry) => {
       return classNames(
@@ -40,14 +38,16 @@ export function Header({ active }: HeaderProps) {
 
   return (
     <header className="mb-6 flex flex-col items-center justify-between gap-1 md:flex-row">
-      <div className="Name block font-mono">{name}</div>
+      <div className="Name block font-mono">
+        <Link href="/">$ pan93412</Link>
+      </div>
       <nav>
         <ul className="Nav inline list-none space-x-6 transition-all">
           <li className={activeClass("About")}>
             <Link href="/">About</Link>
           </li>
-          <li className={activeClass("Projects")}>
-            <Link href="/projects">Projects</Link>
+          <li className={activeClass("Portfolio")}>
+            <Link href="/portfolio">Portfolio</Link>
           </li>
           <li className={activeClass("Speeches")}>
             <Link href="/speeches">Speeches</Link>

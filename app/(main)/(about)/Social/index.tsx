@@ -1,14 +1,13 @@
-import Link from "next/link";
-import { type ReactNode } from "react";
 import {
   BsGithub,
   BsTwitter,
   BsFacebook,
-  BsDiscord,
   BsTelegram,
   BsMailbox,
+  BsDiscord,
 } from "react-icons/bs";
 import { FaKeybase } from "react-icons/fa";
+import { SocialButton } from "./Button";
 
 /**
  * 社群連結
@@ -30,9 +29,13 @@ export function SocialLinks() {
         <SocialButton
           name="Telegram"
           icon={<BsTelegram />}
-          href="https://t.me/instance0f"
+          href="https://t.me/bystartw_chatboard"
         />
-        <SocialButton name="Discord" icon={<BsDiscord />} href="about:blank" />
+        <SocialButton
+          name="Discord"
+          icon={<BsDiscord />}
+          href="https://discord.gg/TVUjgNA4WD"
+        />
         <SocialButton
           name="Facebook"
           icon={<BsFacebook />}
@@ -50,40 +53,5 @@ export function SocialLinks() {
         />
       </div>
     </section>
-  );
-}
-
-/**
- * The configuration for Social Buttons.
- */
-interface SocialButtonProps {
-  /**
-   * The name of this social platform.
-   */
-  name: string;
-  /**
-   * The icon of the button.
-   */
-  icon: ReactNode;
-  /**
-   * The link of this button.
-   */
-  href: string;
-}
-
-/**
- * The button that can redirect users to the corresponding social platform
- */
-function SocialButton({ name, icon, href }: SocialButtonProps) {
-  return (
-    <Link href={href} rel="nofollow">
-      <button
-        type="button"
-        className="block rounded p-4 transition hover:bg-neutral-800"
-        aria-label={`Pan's social platform on ${name}`}
-      >
-        {icon}
-      </button>
-    </Link>
   );
 }

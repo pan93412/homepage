@@ -1,7 +1,7 @@
 import { Header } from "../../../components/Header";
 
 /**
- * Projects page.
+ * Portfolio page.
  */
 export default function Layout({
   children,
@@ -11,7 +11,7 @@ export default function Layout({
 }) {
   return (
     <>
-      <Header active="Projects" />
+      <Header active="Portfolio" />
       {children}
     </>
   );

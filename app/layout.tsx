@@ -10,6 +10,7 @@ import { NextSeo } from "next-seo";
 const cabin = Cabin({
   variable: "--font-cabin",
   subsets: ["latin"],
+  preload: true,
 });
 
 // eslint-disable-next-line new-cap
@@ -52,7 +53,7 @@ const harmonyosSans = Local({
 });
 
 /**
- * The root layout. Should not include specific stuff.
+ * The root layout.
  */
 export default function RootLayout({
   children,
@@ -83,9 +84,10 @@ export default function RootLayout({
             handle: "@pan93412",
           }}
           openGraph={{
-            title: "Pan93412 的個人介紹",
+            title: "Pan93412 的自介",
             description:
-              "pan 是個來自台灣的程式開發者、翻譯員、UI/UX 設計師，也是個學生。",
+              "pan93412 是個來自台灣的程式開發者、翻譯員、UI/UX 設計師。" +
+              "這個網站是他的個人簡歷與各項作品集。",
             url: "https://pan93.com",
             type: "profile",
             profile: {
