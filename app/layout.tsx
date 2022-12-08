@@ -1,12 +1,22 @@
 import "./globals.css";
-import { Cabin } from "@next/font/google";
+import "./article.css";
+// eslint-disable-next-line camelcase
+import { Cabin, IBM_Plex_Mono } from "@next/font/google";
 import Local from "@next/font/local";
 import classNames from "classnames";
+import { NextSeo } from "next-seo";
 
 // eslint-disable-next-line new-cap
 const cabin = Cabin({
   variable: "--font-cabin",
   subsets: ["latin"],
+});
+
+// eslint-disable-next-line new-cap
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: "--font-ibm-plex-mono",
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 // eslint-disable-next-line new-cap
@@ -53,8 +63,40 @@ export default function RootLayout({
   return (
     <html
       lang="zh-tw"
-      className={classNames(cabin.variable, harmonyosSans.variable)}
+      className={classNames(
+        cabin.variable,
+        harmonyosSans.variable,
+        ibmPlexMono.variable
+      )}
     >
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <NextSeo
+          useAppDir={true}
+          titleTemplate="Pan93412 自介｜%s"
+          themeColor="#171717"
+          canonical="https://pan93.com"
+          twitter={{
+            cardType: "summary",
+            site: "@pan93412",
+            handle: "@pan93412",
+          }}
+          openGraph={{
+            title: "Pan93412 的個人介紹",
+            description:
+              "pan 是個來自台灣的程式開發者、翻譯員、UI/UX 設計師，也是個學生。",
+            url: "https://pan93.com",
+            type: "profile",
+            profile: {
+              firstName: "Yi-Jyun",
+              lastName: "Pan",
+              username: "pan93412",
+              gender: "male",
+            },
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

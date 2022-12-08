@@ -1,0 +1,11 @@
+.article {
+  @apply leading-relaxed;
+
+  h2 {
+    @apply mt-4 mb-2 text-2xl font-bold;
+  }
+
+  h3 {
+    @apply my-2 text-2xl font-medium;
+  }
+}

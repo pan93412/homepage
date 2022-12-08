@@ -10,13 +10,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      padding: {
+        0.5: "0.125rem",
+      },
       fontFamily: {
-        discord: [
-          "var(--font-cabin)",
-          "var(--font-harmony)",
-          ...fontFamily.sans,
-        ],
-        sans: ["var(--font-harmony)", ...fontFamily.sans],
+        mono: ["var(--font-ibm-plex-mono)", ...fontFamily.sans],
+        sans: ["var(--font-cabin)", "var(--font-harmony)", ...fontFamily.sans],
       },
     },
   },
