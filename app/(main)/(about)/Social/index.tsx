@@ -1,13 +1,7 @@
-import {
-  BsTwitter,
-  BsFacebook,
-  BsTelegram,
-  BsMailbox,
-  BsDiscord,
-} from "react-icons/bs";
-import { FaKeybase } from "react-icons/fa";
+import { BsFacebook, BsTelegram, BsMailbox, BsDiscord } from "react-icons/bs";
+import { FaBlogger, FaKeybase } from "react-icons/fa";
 import { SocialButton } from "./Button";
-import { GitHubSocialButton } from "./Specials";
+import { GitHubSocialButton, TwitterSocialButton } from "./Specials";
 
 /**
  * 社群連結
@@ -15,10 +9,11 @@ import { GitHubSocialButton } from "./Specials";
 export function SocialLinks() {
   return (
     <section className="SocialLinks">
-      <div className="flex flex-wrap">
+      <div className="grid grid-cols-4">
         <GitHubSocialButton />
-        <SocialButton name="Twitter" href="https://twitter.com/byStarTW">
-          <BsTwitter />
+        <TwitterSocialButton />
+        <SocialButton name="Blog" href="https://blog.pan93.com">
+          <FaBlogger />
         </SocialButton>
         <SocialButton name="Telegram" href="https://t.me/bystartw_chatboard">
           <BsTelegram />
