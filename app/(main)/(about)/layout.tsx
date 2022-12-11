@@ -15,8 +15,7 @@ export default function Layout({
       <NextSeo
         useAppDir
         title="關於"
-        description="pan 是個來自台灣的程式開發者、翻譯員、UI/UX 設計師，也是個學生
-        🤓。本頁面主要呈現其個人介紹。"
+        description="pan 是個來自台灣的程式開發者、翻譯員、UI/UX 設計師。本頁面主要呈現其個人介紹。"
       />
       <Header active="About" />
       {children}

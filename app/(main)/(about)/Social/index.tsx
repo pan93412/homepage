@@ -1,12 +1,13 @@
 import { BsFacebook, BsTelegram, BsMailbox, BsDiscord } from "react-icons/bs";
 import { FaBlogger, FaKeybase } from "react-icons/fa";
 import { SocialButton } from "./Button";
-import { GitHubSocialButton, TwitterSocialButton } from "./Specials";
+import { GitHubSocialButton } from "./GitHub";
+import { TwitterSocialButton } from "./Twitter";
 
 /**
  * 社群連結
  */
-export function SocialLinks() {
+export default function SocialLinks() {
   return (
     <section className="SocialLinks">
       <div className="grid grid-cols-4">

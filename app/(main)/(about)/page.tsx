@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import { UserInfo } from "./Info";
-import { SocialLinks } from "./Social";
 
+const SocialLinks = dynamic(() => import("./Social"));
 const Introduction = dynamic(() => import("./Introduction"));
 
 /**
