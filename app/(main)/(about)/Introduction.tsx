@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { LinkBlock } from "@components/LinkBlock";
+import { Href } from "@components/Href";
 
 /**
  * about 的自介段落。
  */
-export default function Introduction() {
+export function Details() {
   return (
     <>
       <section className="ProgrammingSkill">
@@ -12,7 +12,7 @@ export default function Introduction() {
         <p>
           我主要是寫 Rust、TypeScript、Python 以及一些 scripts (POSIX sh, fish,
           etc.)。算是個雜食型工程師 😂 知名專案可以參考{" "}
-          <LinkBlock href="/projects">Projects</LinkBlock>。
+          <Href href="/projects">Projects</Href>。
         </p>
       </section>
 
@@ -21,7 +21,7 @@ export default function Introduction() {
         <p>
           我目前是 Git、GNU nano、Weblate、Keka、OBS Studio
           等軟體的長期翻譯員，也是{" "}
-          <LinkBlock href="https://t.me/l10n_tw">@l10n-tw</LinkBlock> 的成員。
+          <Href href="https://t.me/l10n_tw">@l10n-tw</Href> 的成員。
           在本地化方面有一些經驗，歡迎來 l10n-tw 回饋翻譯或交流意見 ✌️
         </p>
       </section>
@@ -55,3 +55,5 @@ export default function Introduction() {
     </>
   );
 }
+
+export default Details;

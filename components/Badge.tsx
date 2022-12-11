@@ -18,3 +18,5 @@ export function Badge({ children }: BadgeProps) {
     <div className="Badge rounded bg-neutral-800 px-1.5 py-2">{children}</div>
   );
 }
+
+export default Badge;

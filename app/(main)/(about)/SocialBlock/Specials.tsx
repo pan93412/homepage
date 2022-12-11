@@ -3,7 +3,7 @@
  * additional features, such as “followers count”.
  */
 
-import classNames from "classnames";
+import { cx } from "classix";
 import { type ReactNode } from "react";
 import { SocialButton, type SocialButtonProps } from "./Button";
 
@@ -25,15 +25,16 @@ export function SpecializedSocialButton({
 }) {
   return (
     <SocialButton
-      className={classNames(
+      className={cx(
         className,
-        "SocialButtonWithFollowers",
+        "SpecializedSocialButton",
         "group relative overflow-hidden leading-none"
       )}
       {...props}
     >
       <div
         className="
+          SpecializedSocialButton-main
           absolute
           translate-y-0 opacity-100
           transition-transform
@@ -43,10 +44,10 @@ export function SpecializedSocialButton({
       </div>
       <div
         className="
-            block
-            translate-y-12 opacity-0
-            transition-transform
-            group-hover:translate-y-0 group-hover:opacity-100"
+          SpecializedSocialButton-hover
+          translate-y-12 opacity-0
+          transition-transform
+          group-hover:translate-y-0 group-hover:opacity-100"
       >
         {childrenOnHover}
       </div>

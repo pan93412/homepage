@@ -1,7 +1,7 @@
 import { Badge } from "@components/Badge";
 
 /**
- * The column for placing badges.
+ * The column for placing badges of Pan.
  *
  * It looks like a strip next to the main content.
  * It won't be shown in mobile mode.

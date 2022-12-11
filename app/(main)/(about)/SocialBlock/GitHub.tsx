@@ -1,8 +1,8 @@
 import { BsGithub } from "react-icons/bs";
 import type { User } from "@octokit/graphql-schema";
-import { getGraphqlInstance } from "@modules/ghapi";
 import { SpecializedSocialButton } from "./Specials";
 import { NonFatalWrapper } from "./Wrappers";
+import { getGraphqlInstance } from "@modules/ghapi";
 
 /**
  * The GitHub Social Button that includes

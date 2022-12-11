@@ -3,8 +3,8 @@ import "./article.css";
 // eslint-disable-next-line camelcase
 import { Cabin, IBM_Plex_Mono } from "@next/font/google";
 import Local from "@next/font/local";
-import classNames from "classnames";
 import { NextSeo } from "next-seo";
+import cx from "classix";
 
 // eslint-disable-next-line new-cap
 const cabin = Cabin({
@@ -64,7 +64,7 @@ export default function RootLayout({
   return (
     <html
       lang="zh-tw"
-      className={classNames(
+      className={cx(
         cabin.variable,
         harmonyosSans.variable,
         ibmPlexMono.variable

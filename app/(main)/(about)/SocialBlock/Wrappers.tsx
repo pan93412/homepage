@@ -7,11 +7,12 @@ const LOADING_PLACEHOLDER = <>…</>;
 const ERROR_PLACEHOLDER = <>###</>;
 
 /**
- * Fallback to {@link LOADING_PLACEHOLDER} or {@link ERROR_PLACEHOLDER} when the component is loading or failed.
+ * Fallback to {@link LOADING_PLACEHOLDER} or {@link ERROR_PLACEHOLDER}
+ * when the component is loading or failed.
  */
 export function NonFatalWrapper(props: {
   /**
-   * The component to wrap.
+   * The component to be wrapped.
    */
   children: ReactNode;
 }) {

@@ -1,9 +1,9 @@
-import classNames from "classnames";
+import cx from "classix";
 import Link from "next/link";
 import { type ReactNode } from "react";
 
 /**
- * The configuration for Social Buttons.
+ * The configuration for {@link SocialButton}.
  */
 export interface SocialButtonProps
   extends React.ComponentPropsWithoutRef<"button"> {
@@ -13,10 +13,12 @@ export interface SocialButtonProps
   name: string;
   /**
    * The content of the button.
+   *
+   * For example, an icon.
    */
   children: ReactNode;
   /**
-   * The link of this button.
+   * The link to redirect to.
    */
   href: string;
 }
@@ -35,7 +37,7 @@ export function SocialButton({
     <Link href={href} rel="nofollow">
       <button
         type="button"
-        className={classNames(
+        className={cx(
           className,
           "SocialButton",
           "block rounded hover:bg-neutral-800",
@@ -43,6 +45,7 @@ export function SocialButton({
           "transition"
         )}
         aria-label={`Pan's social platform on ${name}`}
+        {...props}
       >
         {children}
       </button>

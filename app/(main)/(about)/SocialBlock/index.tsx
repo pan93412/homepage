@@ -7,7 +7,7 @@ import { TwitterSocialButton } from "./Twitter";
 /**
  * 社群連結
  */
-export default function SocialLinks() {
+export function SocialLinks() {
   return (
     <section className="SocialLinks">
       <div className="grid grid-cols-4">
@@ -35,3 +35,5 @@ export default function SocialLinks() {
     </section>
   );
 }
+
+export default SocialLinks;

@@ -30,8 +30,6 @@ async function TwitterFollowerCount() {
   const USERNAME = "byStarTW";
   const token = process.env.TWITTER_API_BEARER_TOKEN;
 
-  return null;
-
   if (!token) {
     throw new Error("TWITTER_API_BEARER_TOKEN is not set");
   }

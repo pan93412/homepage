@@ -1,5 +1,5 @@
 import { NextSeo } from "next-seo";
-import { Header } from "@components/Header";
+import Header from "@components/Header";
 
 /**
  * About page.
