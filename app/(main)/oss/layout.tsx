@@ -1,7 +1,7 @@
 import Header from "@components/Header";
 
 /**
- * Contribution page.
+ * OSS Contribution page.
  */
 export default function Layout({
   children,
@@ -11,7 +11,7 @@ export default function Layout({
 }) {
   return (
     <>
-      <Header active="Contributions" />
+      <Header active="OSS" />
       {children}
     </>
   );
