@@ -1,7 +1,7 @@
-import { type LinkProps } from "@utils/NextLinkProps";
+import React from "react";
 import { cx } from "classix";
 import Link from "next/link";
-import React from "react";
+import { type LinkProps } from "@utils/NextLinkProps";
 
 /**
  * The wrapper of `next/link`, with some customized styles.
