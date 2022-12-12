@@ -1,7 +1,7 @@
 import Header from "@components/Header";
 
 /**
- * Speeches page.
+ * Extras page.
  */
 export default function Layout({
   children,
@@ -11,7 +11,7 @@ export default function Layout({
 }) {
   return (
     <>
-      <Header active="Speeches" />
+      <Header active="Extras" />
       {children}
     </>
   );

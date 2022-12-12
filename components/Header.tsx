@@ -5,7 +5,7 @@ import React from "react";
 /**
  * The available entries in the header
  */
-export type HeaderEntry = "About" | "Portfolio" | "Speeches" | "OSS";
+export type HeaderEntry = "About" | "Portfolio" | "Extras" | "OSS";
 
 /**
  * The configuration of Header.
@@ -33,11 +33,11 @@ export function Header({ active }: HeaderProps) {
         <NavItem href="/portfolio" active={active === "Portfolio"}>
           Portfolio
         </NavItem>
-        <NavItem href="/speeches" active={active === "Speeches"}>
-          Speeches
-        </NavItem>
         <NavItem href="/oss" active={active === "OSS"}>
           OSS
+        </NavItem>
+        <NavItem href="/extras" active={active === "Extras"}>
+          Extras
         </NavItem>
       </NavContainer>
     </header>
