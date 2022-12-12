@@ -1,3 +1,4 @@
+import { LinkProps } from "@utils/NextLinkProps";
 import { cx } from "classix";
 import Link from "next/link";
 import React from "react";
@@ -72,7 +73,7 @@ export function NavItem({
   className,
   active,
   ...props
-}: (typeof Link extends (p: infer P) => unknown ? P : never) & {
+}: LinkProps & {
   /**
    * Is this entry active?
    */
