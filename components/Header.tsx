@@ -1,7 +1,7 @@
-import { LinkProps } from "@utils/NextLinkProps";
 import { cx } from "classix";
 import Link from "next/link";
 import React from "react";
+import { type LinkProps } from "@utils/NextLinkProps";
 
 /**
  * The available entries in the header
@@ -24,7 +24,7 @@ export interface HeaderProps {
 export function Header({ active }: HeaderProps) {
   return (
     <header className="mb-6 flex flex-col items-center justify-between gap-1 md:flex-row">
-      <div className="Name block font-mono">
+      <div className="block font-mono">
         <Link href="/">$ pan93412</Link>
       </div>
       <NavContainer>

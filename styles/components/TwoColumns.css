@@ -1,0 +1,5 @@
+@layer components {
+  .TwoColumns {
+    @apply grid grid-cols-1 justify-between gap-12 sm:grid-cols-2;
+  }
+}

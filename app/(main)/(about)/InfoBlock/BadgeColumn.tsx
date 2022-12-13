@@ -1,5 +1,3 @@
-import { Badge } from "@components/Badge";
-
 /**
  * The column for placing badges of Pan.
  *
@@ -9,10 +7,10 @@ import { Badge } from "@components/Badge";
 export function BadgeColumn() {
   return (
     <section className="BadgeColumn hidden h-full w-max flex-col gap-2 leading-5 md:flex">
-      <Badge>開發</Badge>
-      <Badge>翻譯</Badge>
-      <Badge>設計</Badge>
-      <Badge>學生</Badge>
+      <div className="BadgeColumn-badge Badge">開發</div>
+      <div className="BadgeColumn-badge Badge">翻譯</div>
+      <div className="BadgeColumn-badge Badge">設計</div>
+      <div className="BadgeColumn-badge Badge">學生</div>
     </section>
   );
 }

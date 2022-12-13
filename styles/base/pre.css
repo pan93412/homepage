@@ -1,0 +1,5 @@
+@layer base {
+  pre {
+    white-space: pre-wrap;
+  }
+}

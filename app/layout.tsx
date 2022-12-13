@@ -1,5 +1,4 @@
-import "./globals.css";
-import "./article.css";
+import "@styles/globals.css";
 // eslint-disable-next-line camelcase
 import { Cabin, IBM_Plex_Mono } from "@next/font/google";
 import Local from "@next/font/local";

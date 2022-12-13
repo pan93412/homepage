@@ -30,15 +30,15 @@ export function RepoCard({
         className="
           RepoCard
           relative
-          flex flex-col gap-7
+          flex flex-col
+          gap-7
           overflow-hidden
           rounded-xl
-          bg-neutral-800
-          px-5 py-4
+          bg-neutral-800 px-5
+          py-4
           transition
           hover:bg-neutral-700
-          hover:shadow
-          hover:shadow-neutral-700"
+          hover:shadow hover:shadow-neutral-700"
       >
         <div className="RepoCard-avatar absolute -left-2 -bottom-2 opacity-10">
           <Image
@@ -51,10 +51,10 @@ export function RepoCard({
           />
         </div>
         <div className="RepoCard-title flex flex-col gap-1">
-          <div className="RepoCard-titleOwner leading-none text-neutral-500">
+          <div className="RepoCard-titleOwner overflow-hidden text-ellipsis leading-none text-neutral-500">
             {owner}/
           </div>
-          <div className="RepoCard-titleRepo text-2xl leading-none text-white">
+          <div className="RepoCard-titleRepo overflow-hidden text-ellipsis text-2xl leading-none text-white">
             {repo}
           </div>
         </div>
