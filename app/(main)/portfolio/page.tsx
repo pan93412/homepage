@@ -35,7 +35,7 @@ export default function Page() {
           </section>
           <section className="PublishedDesign">
             <h2>Published Designs</h2>
-            <iframe title="Pan93412's published designs" src="https://figma.com/@pan93412" className="w-full" />
+            <p>WIP</p>
           </section>
         </div>
       </main>
