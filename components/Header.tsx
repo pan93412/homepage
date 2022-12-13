@@ -6,7 +6,7 @@ import { type LinkProps } from "@utils/NextLinkProps";
 /**
  * The available entries in the header
  */
-export type HeaderEntry = "About" | "Portfolio" | "Extras" | "OSS";
+export type HeaderEntry = "About" | "Portfolio" | "OSS";
 
 /**
  * The configuration of Header.
@@ -37,9 +37,9 @@ export function Header({ active }: HeaderProps) {
         <NavItem href="/oss" active={active === "OSS"}>
           OSS
         </NavItem>
-        <NavItem href="/extras" active={active === "Extras"}>
+        {/* <NavItem href="/extras" active={active === "Extras"}>
           Extras
-        </NavItem>
+        </NavItem> */}
       </NavContainer>
     </header>
   );
