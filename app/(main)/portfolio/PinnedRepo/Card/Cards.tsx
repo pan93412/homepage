@@ -1,5 +1,4 @@
 import cx from "classix";
-import React from "react";
 
 /**
  * The container to place cards.

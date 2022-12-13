@@ -7,7 +7,7 @@ import { ggraphql } from "@modules/ghapi";
 /**
  * Get the pinned repos from GitHub.
  */
-export async function useGitHubPinnedRepositories(): Promise<RepositoryInfo[]> {
+export async function getGitHubPinnedRepositories(): Promise<RepositoryInfo[]> {
   const USERNAME = "pan93412";
 
   // eslint-disable-next-line jsdoc/require-jsdoc

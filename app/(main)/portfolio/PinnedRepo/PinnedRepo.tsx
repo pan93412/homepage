@@ -1,13 +1,13 @@
 import "server-only";
-import { RepoCard } from "./Card";
-import { RepoCards } from "./Cards";
-import { useGitHubPinnedRepositories } from "./fetch";
+import { RepoCard } from "./Card/Card";
+import { RepoCards } from "./Card/Cards";
+import { getGitHubPinnedRepositories } from "./fetch";
 
 /**
  * Get the pinned repositories.
  */
 export async function PinnedRepo() {
-  const repos = await useGitHubPinnedRepositories();
+  const repos = await getGitHubPinnedRepositories();
   return (
     <RepoCards>
       {repos.map((props) => (
