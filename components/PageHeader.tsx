@@ -19,7 +19,7 @@ export interface PageHeaderProps {
 export function PageHeader({ title, description }: PageHeaderProps) {
   return (
     <header className="PageHeader mb-4 w-full space-y-1 rounded-2xl bg-neutral-800 p-10">
-      <h1 className="text-2xl font-bold">{title}</h1>
+      <h1 className="text-3xl font-bold">{title}</h1>
       <p>{description}</p>
     </header>
   );
