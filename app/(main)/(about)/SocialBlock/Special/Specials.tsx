@@ -1,34 +1,35 @@
-/**
- * Specials: The social button that provides some
- * additional features, such as “followers count”.
- */
-
 import { cx } from "classix";
 import { type ReactNode } from "react";
-import { SocialButton, type SocialButtonProps } from "./Button";
+import { SocialButton, type SocialButtonProps } from "../Button";
 
 /**
- * The specialized social button, including
- * some cool features such as
- * “change content on hovering”.
+ * The props for {@link ScrollableSocialButton}.
  */
-export function SpecializedSocialButton({
-  className,
-  childrenOnHover,
-  children,
-  ...props
-}: SocialButtonProps & {
+export interface ScrollableSocialButtonProps extends SocialButtonProps {
   /**
    * Hover 時的內容
    */
   childrenOnHover: ReactNode;
-}) {
+}
+
+/**
+ * The scrollable social button.
+ */
+export function ScrollableSocialButton({
+  className,
+  childrenOnHover,
+  children,
+  ...props
+}: ScrollableSocialButtonProps) {
   return (
     <SocialButton
       className={cx(
         className,
         "SpecializedSocialButton",
-        "group relative overflow-hidden leading-none"
+        "group",
+        "relative overflow-hidden leading-none",
+        // The common style of children
+        "[&>*]:transition-transform [&>*]:duration-300"
       )}
       {...props}
     >
@@ -37,8 +38,6 @@ export function SpecializedSocialButton({
           SpecializedSocialButton-main
           absolute
           translate-y-0 opacity-100
-          transition-transform
-          duration-300
           group-hover:-translate-y-12 group-hover:opacity-0"
       >
         {children}
@@ -47,8 +46,6 @@ export function SpecializedSocialButton({
         className="
           SpecializedSocialButton-hover
           translate-y-12 opacity-0
-          transition-transform
-          duration-300
           group-hover:translate-y-0 group-hover:opacity-100"
       >
         {childrenOnHover}

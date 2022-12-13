@@ -1,8 +1,8 @@
 import { BsFacebook, BsTelegram, BsMailbox, BsDiscord } from "react-icons/bs";
 import { FaBlogger, FaKeybase } from "react-icons/fa";
 import { SocialButton } from "./Button";
-import { GitHubSocialButton } from "./GitHub";
-import { TwitterSocialButton } from "./Twitter";
+import { GitHubSocialButton } from "./Platforms/GitHub";
+import { TwitterSocialButton } from "./Platforms/Twitter";
 
 /**
  * 社群連結
@@ -11,9 +11,7 @@ export function SocialLinks() {
   return (
     <section className="SocialLinks">
       <div className="grid grid-cols-4">
-        {/* @ts-expect-error Server Component */}
         <GitHubSocialButton />
-        {/* @ts-expect-error Server Component */}
         <TwitterSocialButton />
         <SocialButton name="Blog" href="https://blog.pan93.com">
           <FaBlogger />
@@ -37,5 +35,3 @@ export function SocialLinks() {
     </section>
   );
 }
-
-export default SocialLinks;

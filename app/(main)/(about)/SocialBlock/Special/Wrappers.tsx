@@ -10,7 +10,7 @@ const ERROR_PLACEHOLDER = <>###</>;
  * Fallback to {@link LOADING_PLACEHOLDER} or {@link ERROR_PLACEHOLDER}
  * when the component is loading or failed.
  */
-export function NonFatalWrapper(props: {
+export function NotFatalSuspenseWrapper(props: {
   /**
    * The component to be wrapped.
    */
