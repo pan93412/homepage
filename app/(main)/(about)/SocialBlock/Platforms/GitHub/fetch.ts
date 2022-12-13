@@ -1,6 +1,6 @@
 import "server-only";
 import { type User } from "@octokit/graphql-schema";
-import { REVALIDATE_SECONDS } from "../const";
+import { REVALIDATE_SECONDS } from "../../const";
 import { ggraphql } from "@modules/ghapi";
 
 /**

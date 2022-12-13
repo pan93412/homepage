@@ -1,5 +1,5 @@
 import "server-only";
-import { REVALIDATE_SECONDS } from "../const";
+import { REVALIDATE_SECONDS } from "../../const";
 
 /**
  * Get the follower count from Twitter.

@@ -1,5 +1,5 @@
 import { BsGithub } from "react-icons/bs";
-import { FollowerIncludedSocialButton } from "../Special";
+import { FollowerIncludedSocialButton } from "../../Special";
 import { getGitHubFollowerCount } from "./fetch";
 
 /**
