@@ -32,6 +32,7 @@ export function FollowerIncludedSocialButton({
   name,
   href,
   icon,
+  fetchMethod,
 }: FollowerIncludedSocialButtonProps) {
   return (
     <ScrollableSocialButton
@@ -39,7 +40,7 @@ export function FollowerIncludedSocialButton({
       href={href}
       childrenOnHover={
         // @ts-expect-error Server Component
-        <FollowersCount />
+        <FollowersCount fetchMethod={fetchMethod} />
       }
     >
       {icon}
