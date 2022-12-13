@@ -21,32 +21,36 @@ export function ScrollableSocialButton({
   children,
   ...props
 }: ScrollableSocialButtonProps) {
+  const commonChildrenStyle = "transition-transform duration-300";
+
   return (
     <SocialButton
       className={cx(
         className,
         "SpecializedSocialButton",
         "group",
-        "relative overflow-hidden leading-none",
-        // The common style of children
-        "[&>*]:transition-transform [&>*]:duration-300"
+        "relative overflow-hidden leading-none"
       )}
       {...props}
     >
       <div
-        className="
-          SpecializedSocialButton-main
-          absolute
-          translate-y-0 opacity-100
-          group-hover:-translate-y-12 group-hover:opacity-0"
+        className={cx(
+          "SpecializedSocialButton-main",
+          "absolute",
+          "translate-y-0 opacity-100",
+          "group-hover:-translate-y-12 group-hover:opacity-0",
+          commonChildrenStyle
+        )}
       >
         {children}
       </div>
       <div
-        className="
-          SpecializedSocialButton-hover
-          translate-y-12 opacity-0
-          group-hover:translate-y-0 group-hover:opacity-100"
+        className={cx(
+          "SpecializedSocialButton-hover",
+          "translate-y-12 opacity-0",
+          "group-hover:translate-y-0 group-hover:opacity-100",
+          commonChildrenStyle
+        )}
       >
         {childrenOnHover}
       </div>
