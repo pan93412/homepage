@@ -1,11 +1,13 @@
+import PinnedRepo from "./PinnedRepo";
+
 /**
- * The page of main app (`/`)
+ * The page of portfolio (`/`)
  */
 export default function Page() {
   return (
     <>
-      <h1 className="text-2xl">Hi.</h1>
-      <p>Welcome to this template.</p>
+      {/* @ts-expect-error Server Component */}
+      <PinnedRepo />
     </>
   );
 }
