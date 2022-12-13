@@ -18,7 +18,7 @@ export default function Layout({
         description="pan 是個來自台灣的程式開發者、翻譯員、UI/UX 設計師。本頁面主要呈現其個人介紹。"
       />
       <Header active="About" />
-      {children}
+      <section className="mx-auto max-w-3xl">{children}</section>
     </>
   );
 }
