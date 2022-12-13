@@ -34,7 +34,7 @@ export function RepoCard({
           overflow-hidden
           rounded-xl
           bg-neutral-800
-          px-5 py-4ga
+          px-5 py-4
           transition
           hover:bg-neutral-700
           hover:shadow
