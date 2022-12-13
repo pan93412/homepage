@@ -4,7 +4,7 @@ import { REVALIDATE_SECONDS } from "../const";
 /**
  * Get the follower count from Twitter.
  */
-export async function TwitterFollowerCount() {
+export async function getTwitterFollowerCount() {
   const USERNAME = "byStarTW";
   const token = process.env.TWITTER_API_BEARER_TOKEN;
 
@@ -27,7 +27,7 @@ export async function TwitterFollowerCount() {
   const followers = json.followers_count;
 
   if (typeof followers === "number") {
-    return `${followers} fo!`;
+    return followers;
   } else {
     throw new Error(`Invalid response: ${JSON.stringify(json)}`);
   }

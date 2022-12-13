@@ -11,7 +11,9 @@ export function SocialLinks() {
   return (
     <section className="SocialLinks">
       <div className="grid grid-cols-4">
+        {/* @ts-expect-error Server Component */}
         <GitHubSocialButton />
+        {/* @ts-expect-error Server Component */}
         <TwitterSocialButton />
         <SocialButton name="Blog" href="https://blog.pan93.com">
           <FaBlogger />
