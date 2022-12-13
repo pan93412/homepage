@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "ms-azuretools.vscode-docker",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "andrewmcodes.tailwindcss-extension-pack",
+    "vunguyentuan.vscode-postcss",
+    "esbenp.prettier-vscode",
+    "ms-edgedevtools.vscode-edge-devtools"
+  ]
+}
