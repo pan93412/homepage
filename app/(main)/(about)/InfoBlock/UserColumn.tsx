@@ -35,7 +35,11 @@ function UserAvatar() {
  * The name of Pan.
  */
 function UserName() {
-  return <h1 className="name text-2xl font-bold">Yi-Jyun Pan (pan93412)</h1>;
+  return (
+    <h1 className="name text-2xl font-bold text-green-50">
+      Yi-Jyun Pan (pan93412)
+    </h1>
+  );
 }
 
 /**
@@ -43,7 +47,7 @@ function UserName() {
  */
 function UserIntroduction() {
   return (
-    <p>
+    <p className="text-neutral-300">
       嗨，我是 pan93412 😄 也可以直接稱呼我 pan。我是個來自台灣 🇹🇼 的程式開發者
       👨🏻‍💻、本地化翻譯員 💬、UI/UX 設計師 👨🏻‍🎨，也是個學生
       🤓。主要從事開源貢獻工作，也會在閒暇時參與軟體社群、協助解惑。

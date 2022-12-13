@@ -10,15 +10,15 @@ const Introduction = dynamic(() => import("./Introduction"));
  */
 export default function Page() {
   return (
-    <main className="mx-auto grid max-w-3xl justify-between gap-12 md:grid-cols-2">
+    <main className="grid justify-between gap-12 md:grid-cols-2">
       <section>
-        <div className="sticky top-8 flex flex-col gap-2">
+        <div className="sticky top-8 flex flex-col gap-2 text-neutral-200">
           <UserInfo />
           <hr />
           <SocialLinks />
         </div>
       </section>
-      <article className="article">
+      <article className="article text-neutral-200">
         <Suspense fallback={<p>Hi 🥰</p>}>
           <Introduction />
         </Suspense>

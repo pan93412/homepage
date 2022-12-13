@@ -38,6 +38,7 @@ export function SpecializedSocialButton({
           absolute
           translate-y-0 opacity-100
           transition-transform
+          duration-300
           group-hover:-translate-y-12 group-hover:opacity-0"
       >
         {children}
@@ -47,6 +48,7 @@ export function SpecializedSocialButton({
           SpecializedSocialButton-hover
           translate-y-12 opacity-0
           transition-transform
+          duration-300
           group-hover:translate-y-0 group-hover:opacity-100"
       >
         {childrenOnHover}
