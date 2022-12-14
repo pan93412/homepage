@@ -9,7 +9,10 @@ export function RepoCards({
 }: React.ComponentPropsWithoutRef<"div">) {
   return (
     <div
-      className={cx(className, "Cards grid grid-cols-1 gap-2 lg:grid-cols-2")}
+      className={cx(
+        className,
+        "Cards grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-4"
+      )}
       {...props}
     ></div>
   );

@@ -2,6 +2,7 @@ import { NextSeo } from "next-seo";
 import React from "react";
 import { Suspense } from "react";
 import PinnedRepo from "./PinnedRepo";
+import FeaturedDesign from "./FeaturedDesign";
 import PageHeader from "@components/PageHeader";
 
 /**
@@ -24,7 +25,7 @@ export default function Page() {
           description="pan 的程式專案、設計作品集，以及一些其他東西 🥰"
         />
 
-        <div className="TwoColumns">
+        <div className="space-y-4">
           <section className="PinnedRepo">
             <h2>Pinned Repositories</h2>
 
@@ -33,9 +34,13 @@ export default function Page() {
               <PinnedRepo />
             </Suspense>
           </section>
-          <section className="PublishedDesign">
-            <h2>Published Designs</h2>
-            <p>WIP</p>
+          <section className="FeaturedDesign">
+            <h2>Featured Designs</h2>
+
+            <Suspense fallback={<div>Loading designs…</div>}>
+              {/* @ts-expect-error Server Component */}
+              <FeaturedDesign />
+            </Suspense>
           </section>
         </div>
       </main>
