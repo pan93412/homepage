@@ -75,6 +75,7 @@ export function NavContainer({
 export function NavItem({
   className,
   active,
+  children,
   ...props
 }: LinkProps & {
   /**
@@ -83,19 +84,22 @@ export function NavItem({
   active?: boolean;
 }) {
   return (
-    <li
-      className={cx(
-        className,
-        "NavItem",
-        "inline",
-        "transition-all ease-in-out",
-        "rounded py-1 px-2",
-        "hover:bg-neutral-800",
-        active && "bg-neutral-800 font-bold"
-      )}
-    >
-      <Link {...props} />
-    </li>
+    <Link {...props}>
+      <li
+        className={cx(
+          className,
+          "NavItem",
+          "transition-all ease-in-out",
+          "rounded py-1 px-2",
+          "min-w-21",
+          "text-center",
+          "hover:bg-neutral-800",
+          active && "bg-neutral-800 font-bold"
+        )}
+      >
+        {children}
+      </li>
+    </Link>
   );
 }
 
