@@ -24,10 +24,10 @@ export function RepoCard({
   return (
     <a
       href={link}
-      title={`navigate to${owner}/${repo}`}
+      title={`navigate to ${owner}/${repo}`}
       target="_blank"
       rel="noreferrer"
-      className="group"
+      className="RepoCard group"
     >
       <div className={CardContainerStyles.CardContainer}>
         <CardAvatar avatar={avatar} owner={owner} repo={repo} />
