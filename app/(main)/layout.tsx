@@ -1,5 +1,5 @@
 import { NextSeo } from "next-seo";
-import { DynamicHeader } from "./Header";
+import { DynamicHeader } from "./DynamicHeader";
 
 /**
  * The layout of main app (`/*`)

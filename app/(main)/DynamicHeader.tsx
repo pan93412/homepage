@@ -7,7 +7,6 @@ export const routeMap: Record<string, HeaderEntry> = {
   "/": "About",
   "/portfolio": "Portfolio",
   "/oss": "OSS",
-  "/extras": "Extras",
 };
 
 /**
