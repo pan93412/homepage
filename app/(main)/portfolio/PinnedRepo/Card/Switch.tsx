@@ -1,5 +1,6 @@
 import { cx } from "classix";
 import { type ReactNode } from "react";
+import styles from "./Card.module.scss";
 
 /**
  * The props of {@link CardSwitch}.
@@ -20,8 +21,6 @@ export interface CardSwitchProps {
  * Switch elements by scrolling up when users hover this element.
  */
 export function CardSwitch({ children, onHoverChildren }: CardSwitchProps) {
-  const commonChildrenStyle = "transform transition duration-300";
-
   return (
     <div
       className={cx(
@@ -36,7 +35,7 @@ export function CardSwitch({ children, onHoverChildren }: CardSwitchProps) {
           "absolute",
           "group-hover:-translate-y-6",
           "group-hover:opacity-0",
-          commonChildrenStyle
+          styles.switchChildren
         )}
       >
         {children}
@@ -46,7 +45,7 @@ export function CardSwitch({ children, onHoverChildren }: CardSwitchProps) {
           "RepoCard-switchHover",
           "translate-y-6 group-hover:translate-y-0",
           "opacity-0 group-hover:opacity-100",
-          commonChildrenStyle
+          styles.switchChildren
         )}
       >
         {onHoverChildren}

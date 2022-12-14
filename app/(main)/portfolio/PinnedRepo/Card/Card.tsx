@@ -1,5 +1,5 @@
 import { type RepositoryInfo } from "../types";
-import CardContainerStyles from "./Card.module.css";
+import styles from "./Card.module.scss";
 import { CardAvatar } from "./Avatar";
 import { CardInfo } from "./Info";
 import { CardRepoName } from "./Name";
@@ -29,7 +29,7 @@ export function RepoCard({
       rel="noreferrer"
       className="RepoCard group"
     >
-      <div className={CardContainerStyles.CardContainer}>
+      <div className={styles.container}>
         <CardAvatar avatar={avatar} owner={owner} repo={repo} />
         <CardRepoName owner={owner} repo={repo} />
         <CardSwitch onHoverChildren="前往 GitHub →">
