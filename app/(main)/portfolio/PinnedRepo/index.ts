@@ -1,3 +1,1 @@
-import { PinnedRepo } from "./PinnedRepo";
-
-export default PinnedRepo;
+export { PinnedRepo as default } from "./PinnedRepo";

@@ -12,8 +12,9 @@ export type CardRepoNameProps = Pick<RepositoryInfo, "owner" | "repo">;
 export function CardRepoName({ owner, repo }: CardRepoNameProps) {
   const commonChildrenStyle = "overflow-hidden leading-none text-ellipsis";
 
+  // Title (H1) > Section (H2) > This card (H3)
   return (
-    <div className="RepoCard-title space-y-1">
+    <h3 className="RepoCard-title space-y-1 reset">
       <div
         className={cx(
           "RepoCard-titleOwner text-neutral-500",
@@ -30,6 +31,6 @@ export function CardRepoName({ owner, repo }: CardRepoNameProps) {
       >
         {repo}
       </div>
-    </div>
+    </h3>
   );
 }
