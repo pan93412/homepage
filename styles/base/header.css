@@ -1,9 +1,9 @@
 @layer base {
-  h2 {
+  h2:not(.reset) {
     @apply mt-4 mb-2 text-xl font-bold;
   }
 
-  h3 {
+  h3:not(.reset) {
     @apply my-2 text-2xl;
   }
 }
