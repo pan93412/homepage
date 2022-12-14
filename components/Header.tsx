@@ -58,7 +58,10 @@ export function NavContainer({
         className={cx(
           className,
           "NavContainer",
-          "inline list-none space-x-6 transition-all"
+          "list-none",
+          "grid gap-x-2",
+          "auto-cols-fr grid-flow-col",
+          "transition-all"
         )}
         {...props}
       />
