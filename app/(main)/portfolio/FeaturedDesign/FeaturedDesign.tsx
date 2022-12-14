@@ -7,7 +7,7 @@ export async function FeaturedDesign() {
   return (
     <DesignWorkCards>
       <DesignWorkCard
-        title="Windows 95"
+        name="Windows 95"
         description={
           <>
             Anim duis mollit occaecat consequat anim sint labore Lorem eu est
