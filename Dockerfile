@@ -18,7 +18,7 @@ COPY .env.local .
 COPY . .
 
 # Build
-RUN pnpm build
+RUN pnpm build && pnpm postbuild
 
 # Production image, copy all the files and run next
 FROM node:18-alpine AS runner
