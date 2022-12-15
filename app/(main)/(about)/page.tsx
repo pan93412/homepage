@@ -38,8 +38,8 @@ export default function Page() {
             <p>
               我主要是寫 Rust、TypeScript、Python 以及一些 scripts (POSIX sh,
               fish, etc.)。算是個雜食型工程師 😂 知名專案可以參考{" "}
-              <Link className="pure" href="/projects">
-                Projects
+              <Link className="pure" href="/portfolio">
+                Portfolio
               </Link>
               。
             </p>
