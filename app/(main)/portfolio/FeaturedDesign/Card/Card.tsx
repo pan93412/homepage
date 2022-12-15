@@ -56,7 +56,6 @@ export function DesignWorkCard({
           </div>
           <div className="DesignCard-description">{description}</div>
         </div>
-        <div className="DesignCard-overlay" />
         <CardBackground name={name} imageUrl={imageUrl} />
       </div>
     </a>
@@ -71,12 +70,15 @@ function CardBackground({
   imageUrl,
 }: Pick<DesignWorkCardProps, "name" | "imageUrl">) {
   return (
-    <Image
-      className="DesignCard-background"
-      fill
-      src={imageUrl}
-      alt={`The background image of ${name}`}
-      unoptimized
-    />
+    <>
+      <div className="DesignCard-overlay" />
+      <Image
+        className="DesignCard-background"
+        fill
+        src={imageUrl}
+        alt={`The background image of ${name}`}
+        unoptimized
+      />
+    </>
   );
 }
