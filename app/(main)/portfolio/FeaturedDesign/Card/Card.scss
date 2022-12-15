@@ -7,6 +7,7 @@
     @apply relative overflow-hidden;
     @apply rounded-2xl;
     @apply relative;
+    @apply transition-shadow;
     @apply group-hover:shadow group-hover:shadow-neutral-800;
   }
 
@@ -36,6 +37,7 @@
   // The overlay part to dim the background of the card.
   &-overlay {
     @extend .transitionClass;
+    @apply transition-opacity;
     @apply -z-10;
     @apply absolute left-0 top-0 w-full h-full;
     @apply bg-neutral-800;

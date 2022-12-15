@@ -29,6 +29,7 @@ export default function Title({ name: title, date }: HeaderProps) {
       <p
         className={cx(
           "text-neutral-300 group-hover:text-neutral-100",
+          "transition-opacity",
           transitionClass,
           "text-sm leading-none"
         )}

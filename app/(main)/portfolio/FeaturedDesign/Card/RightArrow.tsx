@@ -12,6 +12,7 @@ export function RightArrow() {
     <div
       className={cx(
         "DesignCard-indicator",
+        "transition",
         transitionClass,
         "opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0"
       )}
