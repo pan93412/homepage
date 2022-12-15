@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { type ReactNode } from "react";
+import { type Work } from "../types";
 import { RightArrow } from "./RightArrow";
 import Title from "./Title";
 import "./Card.scss";
@@ -7,28 +7,7 @@ import "./Card.scss";
 /**
  * The props of {@link DesignWorkCard}
  */
-export interface DesignWorkCardProps {
-  /**
-   * The name of this work.
-   */
-  name: string;
-  /**
-   * The introduction or description of this work.
-   */
-  description: ReactNode;
-  /**
-   * The date when this work made.
-   */
-  date: Date;
-  /**
-   * The URL to the design file.
-   */
-  designUrl: string;
-  /**
-   * The thumbnail image URL of this work.
-   */
-  imageUrl: string;
-}
+export type DesignWorkCardProps = Omit<Work, "id">;
 
 /**
  * The card placing a design work.
@@ -46,7 +25,7 @@ export function DesignWorkCard({
       title={`navigate to design ${name}`}
       target="_blank"
       rel="noreferrer"
-      className="DesignCard group"
+      className="DesignCard group h-[1fr]"
     >
       <div className="DesignCard-container">
         <div className="DesignCard-content">
@@ -69,6 +48,8 @@ function CardBackground({
   name,
   imageUrl,
 }: Pick<DesignWorkCardProps, "name" | "imageUrl">) {
+  if (!imageUrl) return null;
+
   return (
     <>
       <div className="DesignCard-overlay" />

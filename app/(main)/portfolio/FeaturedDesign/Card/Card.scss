@@ -3,7 +3,8 @@
 .DesignCard {
   // The container of the card.
   &-container {
-    @apply transition relative overflow-hidden;
+    @extend .transitionClass;
+    @apply relative overflow-hidden;
     @apply rounded-2xl;
     @apply relative;
     @apply group-hover:shadow group-hover:shadow-neutral-800;
@@ -37,8 +38,7 @@
     @extend .transitionClass;
     @apply -z-10;
     @apply absolute left-0 top-0 w-full h-full;
-    @apply transition;
-    @apply bg-gradient-to-b from-neutral-800/60 to-neutral-800;
-    @apply opacity-100 group-hover:opacity-5;
+    @apply bg-neutral-800;
+    @apply opacity-75 group-hover:opacity-50;
   }
 }

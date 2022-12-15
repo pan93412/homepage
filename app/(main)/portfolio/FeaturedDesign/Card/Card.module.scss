@@ -1,4 +1,4 @@
 // The common transition of the components.
 .transitionClass {
-  @apply transition duration-500;
+  @apply transition transform-gpu duration-500;
 }

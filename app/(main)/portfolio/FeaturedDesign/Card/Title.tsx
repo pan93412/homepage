@@ -25,10 +25,10 @@ export default function Title({ name: title, date }: HeaderProps) {
   return (
     <div className={cx("DesignCard-title", "flex flex-col-reverse gap-1.5")}>
       {/* H3: Title > Section > This Block */}
-      <h3 className="text-white text-2xl leading-none reset">{title}</h3>
+      <h3 className="text-white text-2xl leading-tight reset">{title}</h3>
       <p
         className={cx(
-          "text-neutral-500 group-hover:text-neutral-300",
+          "text-neutral-300 group-hover:text-neutral-100",
           transitionClass,
           "text-sm leading-none"
         )}
