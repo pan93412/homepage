@@ -1,4 +1,5 @@
 import { NextSeo } from "next-seo";
+import { notFound } from "next/navigation";
 
 /**
  * A page is UI that is unique to a route.
@@ -6,6 +7,8 @@ import { NextSeo } from "next-seo";
  * @see https://beta.nextjs.org/docs/api-reference/file-conventions/page
  */
 export default function Page() {
+  
+  return notFound();
   return (
     <>
       <NextSeo

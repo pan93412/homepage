@@ -6,7 +6,6 @@ import Header, { type HeaderEntry } from "@components/Header";
 export const routeMap: Record<string, HeaderEntry> = {
   "/": "About",
   "/portfolio": "Portfolio",
-  "/oss": "OSS",
 };
 
 /**
