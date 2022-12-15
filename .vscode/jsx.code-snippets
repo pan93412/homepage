@@ -1,0 +1,43 @@
+{
+  "Component Props": {
+    "scope": "typescriptreact, javascriptreact",
+    "prefix": "cp",
+    "body": [
+      "/**",
+      " * The props of {@link ${1}}",
+      " */",
+      "export interface ${1}Props {",
+      "  $0",
+      "}"
+    ],
+    "description": "Create a props interface for a component."
+  },
+  "Component": {
+    "scope": "typescriptreact, javascriptreact",
+    "prefix": "cc",
+    "body": [
+      "/**",
+      " * $2",
+      " */",
+      "export function $1(props: ${1}Props) {",
+      "  $0",
+      "}"
+    ],
+    "description": "Create a component."
+  },
+  "Component (Internal)": {
+    "scope": "typescriptreact, javascriptreact",
+    "prefix": "cci",
+    "body": [
+      "/**",
+      " * $2",
+      " *",
+      " * @internal",
+      " */",
+      "export function $1(props: ${1}Props) {",
+      "  $0",
+      "}"
+    ],
+    "description": "Create an internal component."
+  }
+}

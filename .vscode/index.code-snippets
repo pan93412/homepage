@@ -1,0 +1,8 @@
+{
+  "Export Default": {
+    "scope": "typescriptreact, javascriptreact, typescript, javascrpt",
+    "prefix": "expd",
+    "body": ["export { $0 as default } from '$1';"],
+    "description": "Create an “export default” sentence."
+  }
+}

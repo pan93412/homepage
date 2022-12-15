@@ -1,0 +1,8 @@
+{
+  "Documented object field": {
+    "scope": "typescriptreact, javascriptreact, typescript, javascrpt",
+    "prefix": "fieldd",
+    "body": ["/**", " * $0", " */", "$1: $2;"],
+    "description": "Create a documented object field."
+  }
+}
