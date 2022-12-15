@@ -3,12 +3,12 @@
 .DesignCard {
   // The container of the card.
   &-container {
-    @extend .transitionClass;
+    // @extend .transitionClass;
     @apply relative overflow-hidden;
     @apply rounded-2xl;
     @apply relative;
-    @apply transition-shadow;
-    @apply group-hover:shadow group-hover:shadow-neutral-800;
+    // @apply transition-shadow;
+    // @apply group-hover:shadow group-hover:shadow-neutral-800;
   }
 
   // The content of the card.
