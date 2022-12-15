@@ -3,6 +3,7 @@ import "@styles/globals.scss";
 import { Cabin, IBM_Plex_Mono } from "@next/font/google";
 import Local from "@next/font/local";
 import cx from "classix";
+import { AnalyticsWrapper } from "./analytics";
 
 // eslint-disable-next-line new-cap
 const cabin = Cabin({
@@ -68,6 +69,7 @@ export default function RootLayout({
         ibmPlexMono.variable
       )}
     >
+      <AnalyticsWrapper />
       <body>{children}</body>
     </html>
   );
