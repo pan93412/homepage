@@ -1,4 +1,4 @@
-# TODOs
+# TO-DOs
 
 - [ ] README
   - [x] Development
@@ -6,9 +6,9 @@
   - [ ] Abstract
   - [ ] Introduction
   - [ ] Opinions
-- [ ] SEO
-  - [ ] Google Analytics
-  - [ ] Sitemap
+- [x] SEO
+  - [x] Google Analytics
+  - [x] Sitemap
 - [ ] Portfolio
   - [ ] Featured Figma Projects
 - [ ] OSS

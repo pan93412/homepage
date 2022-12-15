@@ -37,6 +37,7 @@ WIP
 
 - `TWITTER_API_BEARER_TOKEN`: 可存取 [Twitter API v1.1](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) 的 token。
 - `GH_API_BEARER_TOKEN`: 可存取 [GitHub GraphQL API v4](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api?apiVersion=2022-11-28) 的 Token。
+- `SITE_URL`: 你網站的 URL，例如 `https://pan93.com`。
 
 ### 安裝套件 // Install dependencies
 
