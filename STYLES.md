@@ -1,7 +1,5 @@
 # Next.js / Style Guide of Pan Homepage
 
-Work in progress.
-
 ## I: Organizing the components
 
 1. Only separate the component to subcomponents if it can't be represented with one element.

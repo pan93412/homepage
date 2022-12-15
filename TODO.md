@@ -1,5 +1,6 @@
 # TO-DOs
 
+- [ ] Refactoring components
 - [ ] README
   - [x] Development
   - [x] Deploying
@@ -9,9 +10,9 @@
 - [x] SEO
   - [x] Google Analytics
   - [x] Sitemap
-- [ ] Portfolio
-  - [ ] Featured Figma Projects
-- [ ] OSS
+- [x] Portfolio
+  - [x] Featured Figma Projects
+- [ ] ~~OSS~~ v2
   - [ ] Pull Request
   - [ ] Issues
   - [ ] Translation

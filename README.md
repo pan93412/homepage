@@ -2,6 +2,10 @@
 
 <!-- LTeX: language=zh-TW -->
 
+> 程式碼正在重構，因此有一些部分還沒做完。
+>
+> 建議 2022-12-16 後再進行 review。
+
 ## 概述 / Abstract
 
 WIP
