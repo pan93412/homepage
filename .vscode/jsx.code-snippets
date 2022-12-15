@@ -39,5 +39,20 @@
       "}"
     ],
     "description": "Create an internal component."
+  },
+  "ClassNameWrapper": {
+    "scope": "typescriptreact, javascriptreact",
+    "prefix": "cw",
+    "body": [
+      "/**",
+      " * $3",
+      " */",
+      "export function $1({ className, ...props }: React.PropsWithChildren<'${2}'>) {",
+      "  return (",
+      "    <$2 className={cx(className, '$0')} {...props} />",
+      "  );",
+      "}"
+    ],
+    "description": "Create a wrapper component that only have the class name changes."
   }
 }
