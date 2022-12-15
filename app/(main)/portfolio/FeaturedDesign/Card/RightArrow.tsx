@@ -13,7 +13,7 @@ export function RightArrow() {
       className={cx(
         "DesignCard-indicator",
         transitionClass,
-        "opacity-0 group-hover:opacity-100"
+        "opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0"
       )}
     >
       <BsArrowRight />

@@ -23,7 +23,7 @@ export default function Title({ name: title, date }: HeaderProps) {
   );
 
   return (
-    <div className={cx("DesignCard-title", "flex flex-col-reverse gap-1")}>
+    <div className={cx("DesignCard-title", "flex flex-col-reverse gap-1.5")}>
       {/* H3: Title > Section > This Block */}
       <h3 className="text-white text-2xl leading-none reset">{title}</h3>
       <p
