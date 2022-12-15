@@ -2,17 +2,16 @@
 
 <!-- LTeX: language=zh-TW -->
 
-> 程式碼正在重構，因此有一些部分還沒做完。
->
-> 建議 2022-12-16 後再進行 review。
-
 ## 概述 / Abstract
 
-WIP
+這個 Profile 是 GitHub 上 README 的延伸，另外具有「簡歷」跟「作品集」的功能。
 
-## 前言與介紹 / Introduction
+採 Next.js、Tailwind CSS，與設計師合作聯手打造出充滿細節、且有著舒適閱讀體驗的作品。
 
-WIP
+## 前言、介紹與心得 / Introduction & Opinions
+
+我把這部份內容放在 blog 上面，可以點接下來的連結查看：
+<https://link.pan93.com/personal-readme-introduction>
 
 ## 技術結構 / Tech Stack
 
@@ -91,10 +90,6 @@ docker build -t pan-homepage:latest .
 ## 貢獻 / Contributing
 
 請參閱 [./CONTRIBUTING.md](./CONTRIBUTING.md)。本檔案包含樣式指南等貢獻須知文件。
-
-## 心得 / Thoughts
-
-WIP
 
 ## TODOs
 
