@@ -69,8 +69,10 @@ export default function RootLayout({
         ibmPlexMono.variable
       )}
     >
-      <AnalyticsWrapper />
-      <body>{children}</body>
+      <body>
+        {children}
+        <AnalyticsWrapper />
+      </body>
     </html>
   );
 }
