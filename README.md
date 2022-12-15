@@ -1,5 +1,7 @@
 # Pan's profile
 
+<!-- LTeX: language=zh-TW -->
+
 ## 概述 / Abstract
 
 WIP
@@ -80,6 +82,10 @@ docker build -t pan-homepage:latest .
 ### On Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpan93412%2Fhomepage&env=TWITTER_API_BEARER_TOKEN,GH_API_BEARER_TOKEN)
+
+## 貢獻 / Contributing
+
+請參閱 [./CONTRIBUTING.md](./CONTRIBUTING.md)。本檔案包含樣式指南等貢獻須知文件。
 
 ## 心得 / Thoughts
 

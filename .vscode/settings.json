@@ -4,5 +4,7 @@
   "tailwindCSS.rootFontSize": 16,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "typescript.tsdk": "node_modules/.pnpm/typescript@4.9.4/node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/.pnpm/typescript@4.9.4/node_modules/typescript/lib",
+  "ltex.additionalRules.motherTongue": "zh-CN",
+  "ltex.completionEnabled": true
 }

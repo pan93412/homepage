@@ -6,6 +6,7 @@
     "andrewmcodes.tailwindcss-extension-pack",
     "vunguyentuan.vscode-postcss",
     "esbenp.prettier-vscode",
-    "ms-edgedevtools.vscode-edge-devtools"
+    "ms-edgedevtools.vscode-edge-devtools",
+    "valentjn.vscode-ltex"
   ]
 }
