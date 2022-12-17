@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { type LinkProps } from "@utils/NextLinkProps";
-import { BsGithub } from "react-icons/bs";
 
 /**
  * The available entries in the header
