@@ -1,8 +1,8 @@
 import { cx } from "classix";
 import Link from "next/link";
 import React from "react";
-import { type LinkProps } from "@utils/NextLinkProps";
 import { BsGithub } from "react-icons/bs";
+import { type LinkProps } from "@utils/NextLinkProps";
 
 /**
  * The available entries in the header

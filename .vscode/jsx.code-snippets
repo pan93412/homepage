@@ -44,10 +44,12 @@
     "scope": "typescriptreact, javascriptreact",
     "prefix": "cw",
     "body": [
+      "import cx from 'classix';",
+      "",
       "/**",
       " * $3",
       " */",
-      "export function $1({ className, ...props }: React.PropsWithChildren<'${2}'>) {",
+      "export function $1({ className, ...props }: React.ComponentPropsWithoutRef<'${2}'>) {",
       "  return (",
       "    <$2 className={cx(className, '$0')} {...props} />",
       "  );",

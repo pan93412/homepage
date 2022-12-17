@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import UserInfo from "./InfoBlock";
+import { Article } from "@components/Article";
 
 const SocialLinks = React.lazy(() => import("./SocialBlock"));
 
@@ -32,7 +33,7 @@ export default function Page() {
             </Suspense>
           </div>
         </section>
-        <article className="Article">
+        <Article>
           <section className="ProgrammingSkill">
             <h2>程式能力</h2>
             <p>
@@ -85,7 +86,7 @@ export default function Page() {
               unoptimized
             ></Image>
           </section>
-        </article>
+        </Article>
       </main>
     </>
   );
