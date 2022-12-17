@@ -1,21 +1,23 @@
 # TO-DOs
 
+- [x] GitHub link
 - [ ] Refactoring components
 - [ ] README
   - [x] Development
   - [x] Deploying
-  - [ ] Abstract
-  - [ ] Introduction
-  - [ ] Opinions
+  - [x] Abstract
+  - [x] Introduction
+  - [x] Opinions
 - [x] SEO
   - [x] Google Analytics
   - [x] Sitemap
 - [x] Portfolio
   - [x] Featured Figma Projects
 - [ ] ~~OSS~~ v2
+  - [ ] Contribution Graph
   - [ ] Pull Request
   - [ ] Issues
   - [ ] Translation
     - [ ] Weblate
     - [ ] Crowdin
-    - [ ] Transifex
+    - [ ] Transifeix

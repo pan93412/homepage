@@ -2,11 +2,12 @@ import { cx } from "classix";
 import Link from "next/link";
 import React from "react";
 import { type LinkProps } from "@utils/NextLinkProps";
+import { BsGithub } from "react-icons/bs";
 
 /**
  * The available entries in the header
  */
-export type HeaderEntry = "About" | "Portfolio";
+export type HeaderEntry = "About" | "Portfolio" | "GitHub";
 
 /**
  * The configuration of Header.
@@ -40,6 +41,12 @@ export function Header({ active }: HeaderProps) {
         {/* <NavItem href="/extras" active={active === "Extras"}>
           Extras
         </NavItem> */}
+        <NavItem
+          href="https://github.com/pan93412/homepage"
+          active={active === "GitHub"}
+        >
+          <BsGithub className="block m-1" />
+        </NavItem>
       </NavContainer>
     </header>
   );
@@ -59,8 +66,8 @@ export function NavContainer({
           className,
           "NavContainer",
           "list-none",
-          "grid gap-x-2",
-          "auto-cols-fr grid-flow-col",
+          "grid gap-x-4",
+          "grid-flow-col",
           "transition-all"
         )}
         {...props}
@@ -91,7 +98,7 @@ export function NavItem({
           "NavItem",
           "transition-all ease-in-out",
           "rounded py-1 px-2",
-          "min-w-21",
+          // "min-w-21",
           "text-center",
           "hover:bg-neutral-800",
           active && "bg-neutral-800 font-bold"
