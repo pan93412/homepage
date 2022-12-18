@@ -9,13 +9,17 @@ COPY package.json pnpm-lock.yaml ./
 
 # Install dependencies
 RUN corepack enable \
-    && pnpm i --production --prefer-frozen-lockfile
+  && pnpm i --production --prefer-frozen-lockfile
 
 # Copy environment variables
 COPY .env.local .
 
 # Copy source code
 COPY . .
+
+# Add `output: standalone` to configuration
+# It replaces the trailing `};` to `  output: "standalone"` following with `\n};`.
+RUN sed -i 's/};/  output: \"standalone\",\n};/g' ./next.config.js
 
 # Build
 RUN pnpm build && pnpm postbuild
