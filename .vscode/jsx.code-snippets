@@ -56,5 +56,24 @@
       "}"
     ],
     "description": "Create a wrapper component that only have the class name changes."
+  },
+  "ClassNameWrapper (Internal)": {
+    "scope": "typescriptreact, javascriptreact",
+    "prefix": "cwi",
+    "body": [
+      "import cx from 'classix';",
+      "",
+      "/**",
+      " * $3",
+      " *",
+      " * @internal",
+      " */",
+      "export function $1({ className, ...props }: React.ComponentPropsWithoutRef<'${2}'>) {",
+      "  return (",
+      "    <$2 className={cx(className, '$0')} {...props} />",
+      "  );",
+      "}"
+    ],
+    "description": "Create a internal wrapper component that only have the class name changes."
   }
 }
