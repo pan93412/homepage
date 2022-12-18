@@ -4,6 +4,7 @@
   "private": true,
   "license": "AGPL-3.0-only",
   "packageManager": "pnpm@7.18.2",
+  "type": "module",
   "scripts": {
     "build": "next build",
     "postbuild": "next-sitemap",
