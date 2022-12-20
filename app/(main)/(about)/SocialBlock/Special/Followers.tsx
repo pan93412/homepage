@@ -25,8 +25,6 @@ export interface FollowerIncludedSocialButtonProps extends FollowerCountProps {
  * It is for internal use, to DRY our “follower-included”
  * social buttons as they are almost the same except the
  * fetch function and the icon.
- *
- * @internal
  */
 export function FollowerIncludedSocialButton({
   name,

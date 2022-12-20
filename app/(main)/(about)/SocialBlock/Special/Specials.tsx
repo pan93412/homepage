@@ -27,7 +27,6 @@ export function ScrollableSocialButton({
     <SocialButton
       className={cx(
         className,
-        "SpecializedSocialButton",
         "group",
         "relative overflow-hidden leading-none"
       )}
@@ -35,7 +34,6 @@ export function ScrollableSocialButton({
     >
       <div
         className={cx(
-          "SpecializedSocialButton-main",
           "absolute",
           "translate-y-0 opacity-100",
           "group-hover:-translate-y-12 group-hover:opacity-0",
@@ -46,7 +44,6 @@ export function ScrollableSocialButton({
       </div>
       <div
         className={cx(
-          "SpecializedSocialButton-hover",
           "translate-y-12 opacity-0",
           "group-hover:translate-y-0 group-hover:opacity-100",
           commonChildrenStyle

@@ -39,7 +39,6 @@ export function SocialButton({
         type="button"
         className={cx(
           className,
-          "SocialButton",
           "block rounded hover:bg-neutral-800",
           "w-full p-4",
           "transition"

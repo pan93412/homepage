@@ -21,7 +21,7 @@ export default function Page() {
         title="關於"
         description="pan 是個來自台灣的程式開發者、翻譯員、UI/UX 設計師。本頁面主要呈現其個人介紹。"
       />
-      <main className="TwoColumns">
+      <main className="two-columns">
         <section>
           <div className="sticky top-8 flex flex-col gap-2">
             <UserInfo />
@@ -34,7 +34,7 @@ export default function Page() {
           </div>
         </section>
         <Article>
-          <section className="ProgrammingSkill">
+          <section>
             <h2>程式能力</h2>
             <p>
               我主要是寫 Rust、TypeScript、Python 以及一些 scripts (POSIX sh,
@@ -46,7 +46,7 @@ export default function Page() {
             </p>
           </section>
 
-          <section className="TranslatingSkill">
+          <section>
             <h2>翻譯能力</h2>
             <p>
               我目前是 Git、GNU nano、Weblate、Keka、OBS Studio
@@ -59,7 +59,7 @@ export default function Page() {
             </p>
           </section>
 
-          <section className="DesigningSkill">
+          <section>
             <h2>設計能力</h2>
             <p>
               尚是業餘設計師，仍在持續學習 🏃！目前是 Open-Edu-Tw/CourseAPI 的
@@ -68,7 +68,7 @@ export default function Page() {
             </p>
           </section>
 
-          <section className="GitHubStats">
+          <section>
             <h2>GitHub 統計資訊</h2>
             <Image
               src="https://github-readme-stats.vercel.app/api?username=pan93412&count_private=true&show_icons=true&bg_color=90,DAFFEF,FCFFFD"

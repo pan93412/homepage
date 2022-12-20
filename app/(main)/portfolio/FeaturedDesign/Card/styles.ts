@@ -1,3 +1,1 @@
-import styles from "./Card.module.scss";
-
-export const { transitionClass } = styles;
+export const transitionClass = "transform-gpu duration-500";

@@ -9,7 +9,7 @@ import { TwitterSocialButton } from "./Platforms/Twitter";
  */
 export function SocialLinks() {
   return (
-    <section className="SocialLinks">
+    <section>
       <div className="grid grid-cols-4">
         <GitHubSocialButton />
         <TwitterSocialButton />

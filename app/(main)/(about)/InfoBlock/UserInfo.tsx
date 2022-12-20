@@ -1,5 +1,5 @@
-import { BadgeColumn } from "./BadgeColumn";
 import { UserColumn } from "./UserColumn";
+import { Badge } from "@components/Badge";
 
 /**
  * The block with Pan's information.
@@ -12,9 +12,26 @@ import { UserColumn } from "./UserColumn";
  */
 export function UserInfo() {
   return (
-    <section className="UserInfo flex items-end gap-6">
+    <section className="flex items-end gap-6">
       <BadgeColumn />
       <UserColumn />
+    </section>
+  );
+}
+
+/**
+ * The column for placing badges of Pan.
+ *
+ * It looks like a strip next to the main content.
+ * It won't be shown in mobile mode.
+ */
+function BadgeColumn() {
+  return (
+    <section className="hidden h-full w-max flex-col gap-2 leading-5 md:flex">
+      <Badge>開發</Badge>
+      <Badge>翻譯</Badge>
+      <Badge>設計</Badge>
+      <Badge>學生</Badge>
     </section>
   );
 }
