@@ -14,8 +14,7 @@ const config = {
         0.5: "0.125rem",
       },
       fontFamily: {
-        mono: ["var(--font-ibm-plex-mono)", ...fontFamily.sans],
-        sans: ["var(--font-cabin)", "var(--font-harmony)", ...fontFamily.sans],
+        sans: ["var(--font-cabin)", ...fontFamily.sans],
       },
     },
   },
