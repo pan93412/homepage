@@ -93,7 +93,7 @@ function NavItem({
   active?: boolean;
 }) {
   return (
-    <Link {...props}>
+    <Link {...props} legacyBehavior>
       <li
         className={cx(
           className,
