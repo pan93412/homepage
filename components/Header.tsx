@@ -61,18 +61,11 @@ export function Header({ active }: HeaderProps) {
 function NavContainer({
   className,
   ...props
-}: React.ComponentPropsWithoutRef<"ul">) {
+}: React.ComponentPropsWithoutRef<"div">) {
   return (
     <nav>
-      <ul
-        className={cx(
-          className,
-          "NavContainer",
-          "list-none",
-          "grid gap-x-4",
-          "grid-flow-col",
-          "transition-all"
-        )}
+      <div
+        className={cx(className, "list-none", "grid gap-x-4", "grid-flow-col")}
         {...props}
       />
     </nav>
@@ -94,21 +87,18 @@ function NavItem({
   active?: boolean;
 }) {
   return (
-    <Link {...props} legacyBehavior>
-      <li
-        className={cx(
-          className,
-          "NavItem",
-          "transition-all ease-in-out",
-          "rounded py-1 px-2",
-          // "min-w-21",
-          "text-center",
-          "hover:bg-neutral-800",
-          active && "bg-neutral-800 font-bold"
-        )}
-      >
-        {children}
-      </li>
+    <Link
+      className={cx(
+        className,
+        "transition ease-in-out",
+        "rounded py-1 px-2",
+        "text-center",
+        "hover:bg-neutral-800",
+        active && "bg-neutral-800 font-bold"
+      )}
+      {...props}
+    >
+      {children}
     </Link>
   );
 }

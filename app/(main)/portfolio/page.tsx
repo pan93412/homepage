@@ -26,7 +26,8 @@ export default function Page() {
         />
 
         <div className="space-y-4">
-          <section className="PinnedRepo">
+          {/* Pinned Repositories */}
+          <section>
             <h2>Pinned Repositories</h2>
 
             <Suspense fallback={<div>Loading repositories…</div>}>
@@ -34,7 +35,9 @@ export default function Page() {
               <PinnedRepo />
             </Suspense>
           </section>
-          <section className="FeaturedDesign">
+
+          {/* Featured Designs */}
+          <section>
             <h2>Featured Designs</h2>
 
             <Suspense fallback={<div>Loading designs…</div>}>

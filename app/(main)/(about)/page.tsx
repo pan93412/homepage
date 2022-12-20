@@ -23,7 +23,7 @@ export default function Page() {
       />
       <main className="two-columns">
         <section>
-          <div className="sticky top-8 flex flex-col gap-2">
+          <div className="sticky top-8 space-y-3">
             <UserInfo />
             <hr />
             <Suspense
@@ -70,21 +70,23 @@ export default function Page() {
 
           <section>
             <h2>GitHub 統計資訊</h2>
-            <Image
-              src="https://github-readme-stats.vercel.app/api?username=pan93412&count_private=true&show_icons=true&bg_color=90,DAFFEF,FCFFFD"
-              alt="GitHub Stats"
-              width={300}
-              height={195 * (300 / 495)}
-              unoptimized
-            />
-            <Image
-              className="pt-2"
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=pan93412&bg_color=90,DAFFEF,FCFFFD"
-              alt="GitHub - Language Stats"
-              width={300}
-              height={285}
-              unoptimized
-            ></Image>
+            <div className="space-y-2">
+              <Image
+                src="https://github-readme-stats.vercel.app/api?username=pan93412&count_private=true&show_icons=true&bg_color=90,DAFFEF,FCFFFD"
+                alt="GitHub Stats"
+                width={300}
+                height={195 * (300 / 495)}
+                unoptimized
+              />
+              <Image
+                className="pt-2"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=pan93412&bg_color=90,DAFFEF,FCFFFD"
+                alt="GitHub - Language Stats"
+                width={300}
+                height={285}
+                unoptimized
+              ></Image>
+            </div>
           </section>
         </Article>
       </main>

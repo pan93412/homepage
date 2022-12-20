@@ -11,7 +11,7 @@ import { TwitterSocialButton } from "./Platforms/Twitter";
 export function SocialLinks() {
   return (
     <section>
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-3">
         <GitHubSocialButton />
         <TwitterSocialButton />
         <MastodonSocialButton />

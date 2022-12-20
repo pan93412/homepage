@@ -27,7 +27,7 @@ export function UserInfo() {
  */
 function BadgeColumn() {
   return (
-    <section className="hidden h-full w-max flex-col gap-2 leading-5 md:flex">
+    <section className="hidden md:block w-min space-y-2 leading-tight">
       <Badge>開發</Badge>
       <Badge>翻譯</Badge>
       <Badge>設計</Badge>

@@ -26,7 +26,7 @@ export function DesignWorkCard({
       title={`navigate to design ${name}`}
       target="_blank"
       rel="noreferrer"
-      className="DesignCard group h-[1fr]"
+      className="group h-full"
     >
       <Container>
         <Content>
@@ -51,12 +51,7 @@ function Container({
 }: React.ComponentPropsWithoutRef<"div">) {
   return (
     <div
-      className={cx(
-        className,
-        "relative overflow-hidden",
-        "rounded-2xl",
-        "relative"
-      )}
+      className={cx(className, "relative overflow-hidden rounded-2xl")}
       {...props}
     />
   );
@@ -70,10 +65,7 @@ function Content({
   ...props
 }: React.ComponentPropsWithoutRef<"article">) {
   return (
-    <article
-      className={cx(className, "flex flex-col", "gap-12 px-5 py-4")}
-      {...props}
-    />
+    <article className={cx(className, "space-y-12", "px-5 py-4")} {...props} />
   );
 }
 
@@ -104,7 +96,7 @@ function Description({
       className={cx(
         className,
         transitionClass,
-        "leading-6 opacity-100 group-hover:opacity-0"
+        "opacity-100 group-hover:opacity-0"
       )}
       {...props}
     />
@@ -157,7 +149,6 @@ function RightArrow() {
   return (
     <div
       className={cx(
-        "DesignCard-indicator",
         "transition",
         transitionClass,
         "opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0"

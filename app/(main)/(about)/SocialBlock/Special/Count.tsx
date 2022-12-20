@@ -23,9 +23,9 @@ export async function FollowersCount({ fetchMethod }: FollowerCountProps) {
 
   return (
     <NotFatalSuspenseWrapper>
-      <div className="flex justify-center gap-1">
-        <div>{count}</div>
-        <div>f.o.</div>
+      <div className="text-center">
+        <span>{count}</span>
+        <span>f.o.</span>
       </div>
     </NotFatalSuspenseWrapper>
   );

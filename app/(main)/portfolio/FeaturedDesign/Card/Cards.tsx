@@ -9,7 +9,7 @@ export function DesignWorkCards({
 }: React.ComponentPropsWithoutRef<"div">) {
   return (
     <div
-      className={cx(className, "Cards grid grid-cols-1 gap-4 md:grid-cols-2")}
+      className={cx(className, "grid gap-4 grid-cols-1 md:grid-cols-2")}
       {...props}
     ></div>
   );

@@ -96,7 +96,7 @@ type CardInfoProps = Pick<RepositoryInfo, "stars" | "forks">;
  */
 function CardInfo({ stars, forks }: CardInfoProps) {
   const infoChildren = "flex items-center gap-1";
-  const infoText = "flex items-center gap-1";
+  const infoText = "leading-none";
 
   return (
     <div className="flex gap-2">
@@ -125,15 +125,9 @@ function CardRepoName({ owner, repo }: CardRepoNameProps) {
 
   // Title (H1) > Section (H2) > This card (H3)
   return (
-    <h3 className="RepoCard-title space-y-1 reset">
-      <div className={cx("RepoCard-titleOwner text-neutral-500", nameChildren)}>
-        {owner}/
-      </div>
-      <div
-        className={cx("RepoCard-titleRepo text-2xl text-white", nameChildren)}
-      >
-        {repo}
-      </div>
+    <h3 className="space-y-1 reset">
+      <div className={cx("text-neutral-500", nameChildren)}>{owner}/</div>
+      <div className={cx("text-2xl text-white", nameChildren)}>{repo}</div>
     </h3>
   );
 }
