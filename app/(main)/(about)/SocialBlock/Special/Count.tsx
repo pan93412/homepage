@@ -25,7 +25,7 @@ export async function FollowersCount({ fetchMethod }: FollowerCountProps) {
     <NotFatalSuspenseWrapper>
       <div className="text-center">
         <span>{count}</span>
-        <span>f.o.</span>
+        <span> f.o.</span>
       </div>
     </NotFatalSuspenseWrapper>
   );
