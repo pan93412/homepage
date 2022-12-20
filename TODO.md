@@ -1,9 +1,9 @@
 # TO-DOs
 
 - [x] GitHub link
-- [ ] Mastodon Link
-- [ ] Refactoring components
-- [ ] README
+- [x] Mastodon Link
+- [x] Refactoring components
+- [x] README
   - [x] Development
   - [x] Deploying
   - [x] Abstract

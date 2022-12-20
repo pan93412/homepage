@@ -2,6 +2,7 @@ import { BsFacebook, BsTelegram, BsMailbox, BsDiscord } from "react-icons/bs";
 import { FaBlogger, FaKeybase } from "react-icons/fa";
 import { SocialButton } from "./Button";
 import { GitHubSocialButton } from "./Platforms/GitHub";
+import { MastodonSocialButton } from "./Platforms/Mastodon";
 import { TwitterSocialButton } from "./Platforms/Twitter";
 
 /**
@@ -13,6 +14,7 @@ export function SocialLinks() {
       <div className="grid grid-cols-4">
         <GitHubSocialButton />
         <TwitterSocialButton />
+        <MastodonSocialButton />
         <SocialButton name="Blog" href="https://blog.pan93.com">
           <FaBlogger />
         </SocialButton>
