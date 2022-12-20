@@ -26,7 +26,7 @@ export function Header({ active }: HeaderProps) {
   return (
     <header className="mb-6 flex flex-col items-center justify-between gap-3 md:flex-row">
       <div className="block font-mono">
-        <Link href="/">
+        <Link href="/" aria-label="pan93412's homepage">
           <Brand />
         </Link>
       </div>
@@ -46,6 +46,7 @@ export function Header({ active }: HeaderProps) {
         <NavItem
           href="https://github.com/pan93412/homepage"
           active={active === "GitHub"}
+          aria-label="GitHub"
         >
           <BsGithub className="block m-1" />
         </NavItem>
