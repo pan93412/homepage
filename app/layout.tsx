@@ -10,6 +10,7 @@ const cabin = Cabin({
   weight: "variable",
   subsets: ["latin"],
   preload: true,
+  display: "swap",
 });
 
 /**
