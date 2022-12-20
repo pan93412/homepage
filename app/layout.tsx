@@ -7,6 +7,7 @@ import { AnalyticsWrapper } from "./analytics";
 // eslint-disable-next-line new-cap
 const cabin = Cabin({
   variable: "--font-cabin",
+  weight: "variable",
   subsets: ["latin"],
   preload: true,
 });
