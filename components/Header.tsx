@@ -24,7 +24,7 @@ export interface HeaderProps {
  */
 export function Header({ active }: HeaderProps) {
   return (
-    <header className="mb-6 flex flex-col items-center justify-between gap-1 md:flex-row">
+    <header className="mb-6 flex flex-col items-center justify-between gap-3 md:flex-row">
       <div className="block font-mono">
         <Link href="/">
           <Brand />
