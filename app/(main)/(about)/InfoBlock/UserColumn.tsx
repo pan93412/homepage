@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CurrentAge } from "./CurrentAge";
 import panAvatar from "./pan.webp";
 
 /**
@@ -24,6 +25,10 @@ export function UserColumn() {
       <h1 className="text-2xl font-bold text-green-200">
         Yi-Jyun Pan (pan93412)
       </h1>
+
+      <p className="text-sm text-neutral-400">
+        Currently <CurrentAge /> years old.
+      </p>
 
       {/* Introduction */}
       <p>
