@@ -1,5 +1,5 @@
 import "server-only";
-import { NotFatalSuspenseWrapper } from "./Wrappers";
+import { ERROR_PLACEHOLDER, NotFatalSuspenseWrapper } from "./Wrappers";
 
 /**
  * The props of {@link FollowersCount}.
@@ -19,14 +19,19 @@ export interface FollowerCountProps {
  * @internal
  */
 export async function FollowersCount({ fetchMethod }: FollowerCountProps) {
-  const count = await fetchMethod();
+  try {
+    const count = await fetchMethod();
 
-  return (
-    <NotFatalSuspenseWrapper>
-      <div className="text-center">
-        <span>{count}</span>
-        <span> f.o.</span>
-      </div>
-    </NotFatalSuspenseWrapper>
-  );
+    return (
+      <NotFatalSuspenseWrapper>
+        <>
+          <span>{count}</span>
+          <span> f.o.</span>
+        </>
+      </NotFatalSuspenseWrapper>
+    );
+  } catch (e) {
+    console.error(e);
+    return ERROR_PLACEHOLDER;
+  }
 }

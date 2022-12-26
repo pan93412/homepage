@@ -4,7 +4,7 @@ import { type ReactNode, Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 
 const LOADING_PLACEHOLDER = <>…</>;
-const ERROR_PLACEHOLDER = <>###</>;
+export const ERROR_PLACEHOLDER = <>###</>;
 
 /**
  * Fallback to {@link LOADING_PLACEHOLDER} or {@link ERROR_PLACEHOLDER}
