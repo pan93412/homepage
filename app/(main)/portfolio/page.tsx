@@ -5,6 +5,9 @@ import PinnedRepo from "./PinnedRepo";
 import FeaturedDesign from "./FeaturedDesign";
 import PageHeader from "@components/PageHeader";
 
+// Update every 12 hours.
+export const revalidate = 43200; // 12hr
+
 /**
  * A page is UI that is unique to a route.
  *
