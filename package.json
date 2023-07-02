@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "license": "AGPL-3.0-only",
-  "packageManager": "pnpm@7.18.2",
+  "packageManager": "pnpm@8.6.5",
   "type": "module",
   "scripts": {
     "build": "next build",
