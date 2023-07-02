@@ -8,7 +8,6 @@ import { constructGraphqlInstance } from "./construct";
 export interface GgraphqlExtraOptions {
   /**
    * The token to use.
-   *
    * @default process.env.GH_API_BEARER_TOKEN
    */
   token?: string;

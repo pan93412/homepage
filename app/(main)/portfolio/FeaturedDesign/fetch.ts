@@ -4,7 +4,6 @@ import { type Work } from "./types";
 
 /**
  * Our schema of Airtable.
- *
  * @see {@link Work}
  */
 type AirtableSchema = {

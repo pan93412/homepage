@@ -70,7 +70,7 @@ function Content({
 }
 
 /**
- * The header of {@link FeaturedDesign}
+ * The header of `FeaturedDesign`.
  */
 function Header({
   className,

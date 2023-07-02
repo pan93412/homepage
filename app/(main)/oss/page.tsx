@@ -3,11 +3,9 @@ import { notFound } from "next/navigation";
 
 /**
  * A page is UI that is unique to a route.
- *
  * @see https://beta.nextjs.org/docs/api-reference/file-conventions/page
  */
 export default function Page() {
-  
   return notFound();
   return (
     <>

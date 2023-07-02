@@ -41,7 +41,6 @@ export function RepoCard({
 
 /**
  * The container of {@link CardAvatar}.
- *
  * @internal
  */
 export function CardContainer({

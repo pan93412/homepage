@@ -5,7 +5,6 @@ import panAvatar from "./pan.webp";
 /**
  * The column includes the avatar and the
  * brief description of Pan.
- *
  * @internal
  */
 export function UserColumn() {

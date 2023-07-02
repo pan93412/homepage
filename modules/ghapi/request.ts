@@ -2,7 +2,6 @@ import { request } from "@octokit/request";
 
 /**
  * Construct the requester with the `Next.js` fetch API and the bearer token.
- *
  * @param revalidate When will this request invalidate? (in seconds)
  */
 export function constructRequester(revalidate?: number) {
