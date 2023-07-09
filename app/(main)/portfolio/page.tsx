@@ -1,4 +1,3 @@
-import { NextSeo } from "next-seo";
 import React from "react";
 import { Suspense } from "react";
 import PinnedRepo from "./PinnedRepo";
@@ -8,6 +7,10 @@ import PageHeader from "@components/PageHeader";
 // Update every 12 hours.
 export const revalidate = 43200; // 12hr
 
+export const metadata = {
+  title: "作品集",
+};
+
 /**
  * A page is UI that is unique to a route.
  * @see https://beta.nextjs.org/docs/api-reference/file-conventions/page
@@ -15,12 +18,6 @@ export const revalidate = 43200; // 12hr
 export default function Page() {
   return (
     <>
-      <NextSeo
-        useAppDir
-        title="作品集"
-        description="pan 是個來自台灣的程式開發者、翻譯員、UI/UX 設計師。本頁面主要呈現其個人專案和作品。"
-      />
-
       <main>
         <PageHeader
           title="作品集"

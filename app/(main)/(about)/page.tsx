@@ -1,4 +1,3 @@
-import { NextSeo } from "next-seo";
 import React from "react";
 import { Suspense } from "react";
 import Image from "next/image";
@@ -8,6 +7,10 @@ import { Article } from "@components/Article";
 
 const SocialLinks = React.lazy(() => import("./SocialBlock"));
 
+export const metadata = {
+  title: "關於",
+};
+
 /**
  * A page is UI that is unique to a route.
  * @see https://beta.nextjs.org/docs/api-reference/file-conventions/page
@@ -15,11 +18,6 @@ const SocialLinks = React.lazy(() => import("./SocialBlock"));
 export default function Page() {
   return (
     <>
-      <NextSeo
-        useAppDir
-        title="關於"
-        description="pan 是個來自台灣的程式開發者、翻譯員、UI/UX 設計師。本頁面主要呈現其個人介紹。"
-      />
       <main className="two-columns">
         <section>
           <div className="sticky top-8 space-y-3">
