@@ -1,6 +1,6 @@
 import "@styles/globals.scss";
 // eslint-disable-next-line camelcase
-import { Cabin } from "@next/font/google";
+import { Cabin } from "next/font/google";
 import cx from "classix";
 import { AnalyticsWrapper } from "./analytics";
 
