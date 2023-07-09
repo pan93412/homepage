@@ -14,12 +14,12 @@
     "start": "next start"
   },
   "dependencies": {
-    "@next/env": "^13.4.7",
-    "@next/font": "^13.4.7",
-    "@octokit/graphql": "^6.0.1",
-    "@octokit/graphql-schema": "^14.17.0",
-    "@octokit/request": "^7.0.1",
-    "@types/node": "20.3.3",
+    "@next/env": "^13.4.9",
+    "@next/font": "^13.4.9",
+    "@octokit/graphql": "^7.0.0",
+    "@octokit/graphql-schema": "^14.19.1",
+    "@octokit/request": "^8.0.3",
+    "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "@vercel/analytics": "^1.0.1",
@@ -27,10 +27,10 @@
     "autoprefixer": "^10.4.14",
     "classix": "^2.1.33",
     "encoding": "^0.1.13",
-    "next": "^13.4.7",
+    "next": "^13.4.9",
     "next-seo": "^6.1.0",
     "next-sitemap": "^4.1.8",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.25",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-error-boundary": "^4.0.10",
@@ -42,13 +42,13 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.60.1",
-    "@typescript-eslint/parser": "^5.60.1",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
     "eslint": "8.44.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-config-next": "13.4.7",
+    "eslint-config-next": "13.4.9",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-jsdoc": "^46.4.3",
-    "prettier": "^2.8.8"
+    "prettier": "^3.0.0"
   }
 }
