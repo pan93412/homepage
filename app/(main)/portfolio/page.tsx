@@ -30,7 +30,6 @@ export default function Page() {
             <h2>Pinned Repositories</h2>
 
             <Suspense fallback={<div>Loading repositories…</div>}>
-              {/* @ts-expect-error Server Component */}
               <PinnedRepo />
             </Suspense>
           </section>
@@ -40,7 +39,6 @@ export default function Page() {
             <h2>Featured Designs</h2>
 
             <Suspense fallback={<div>Loading designs…</div>}>
-              {/* @ts-expect-error Server Component */}
               <FeaturedDesign />
             </Suspense>
           </section>

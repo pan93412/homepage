@@ -38,7 +38,6 @@ export function FollowerIncludedSocialButton({
       href={href}
       childrenOnHover={
         <div className="text-center">
-          {/* @ts-expect-error Server Component */}
           <FollowersCount fetchMethod={fetchMethod} />
         </div>
       }
